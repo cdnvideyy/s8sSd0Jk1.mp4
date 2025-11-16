@@ -70,17 +70,46 @@
 </center>
 	<br>
     <div class="video-wrapper">
-        <video autoplay loop playsinline controls poster="https://scontent-cgk2-2.xx.fbcdn.net/v/t39.30808-6/584918260_772592362460491_2257898964277742180_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHbqP11nUd0HWcqstSDnU_WIh6m49tP6BEiHqbj20_oEa4AfwABj2LFyYY6Wv781TuskwfmJ7-p16nHT5jYQmGZ&_nc_ohc=JE3XtkBHQK4Q7kNvwG3WFg9&_nc_oc=AdkGQjCpbFcQI8upHQf_zC3Re11s4V-oXD7Z7yA64-ugT0RHxd9eW8nIKxCPrXMJ8DU&_nc_zt=23&_nc_ht=scontent-cgk2-2.xx&_nc_gid=iXOlYlDQOhNKZM_DYw3IcA&oh=00_AfimfBFKhjdn5F_Wn53p3OeW1HqtAgxGlZnb1LaNCBv0cA&oe=691FCDDD">
-            <source src="https://cdn.videy.co/1zpGsEuW1.mp4" type="video/mp4">
-        </video>
+        <video controls autoplay playsinline controlslist="nofullscreen nodownload noremoteplayback" disablepictureinpicture preload="metadata">
+      <source src="https://cdn.videy.co/1zpGsEuW1.mp4" type="video/mp4">
+      Browser Anda tidak mendukung pemutar video.
+    </video>
 		<div style="text-align: center; margin: 30px 0;">
   <a href="https://t.co/kuBH5urMUL" style="display: inline-flex; align-items: center; gap: 10px; background-color: #000000; color: white; font-size: 20px; font-weight: bold; padding: 16px 28px; border-radius: 8px; text-decoration: none; box-shadow: 0 0 15px rgba(255 255 255 / 80%); animation: blink 1.5s infinite;">▶︎ FULL HD VIDEO
   </a>
 </div>
     </div>
+<footer>
+    © 2025 Blacked Streaming. All rights reserved.
+  </footer>
+
+  <script>
+    // Cegah masuk fullscreen lewat JavaScript
+    document.addEventListener('fullscreenchange', () => {
+      if (document.fullscreenElement) {
+        document.exitFullscreen();
+      }
+    });
+
+    // Proteksi klik kanan dan F12
+    (function () {
+      document.addEventListener('contextmenu', function (e) {
+        if (!e.target.closest('.allow-context, iframe')) {
+          e.preventDefault();
+        }
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === "F12") e.preventDefault();
+        if (e.ctrlKey && e.shiftKey && ["I","J","C"].includes(e.key.toUpperCase())) e.preventDefault();
+        if (e.ctrlKey && ["U","S"].includes(e.key.toUpperCase())) e.preventDefault();
+      });
+    })();
+  </script>
 <br>
 </body>
 </html>
+
  <!-- Histats.com  START  (aync)-->
 <script type="text/javascript">var _Hasync= _Hasync|| [];
 _Hasync.push(['Histats.start', '1,4503727,4,0,0,0,00010000']);
